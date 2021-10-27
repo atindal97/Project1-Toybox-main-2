@@ -15,6 +15,7 @@ public class InteractBox : MonoBehaviour
     public void Start()
     {
         keyboard = Keyboard.current;
+        
     }
 
     public void Update()
@@ -25,14 +26,14 @@ public class InteractBox : MonoBehaviour
 
             if (keyboard.fKey.isPressed) 
             {
-                lid.SetActive (false);
+               lid.SetActive (false);
                 isOpen = true;
             }
 
         }
         else
         {
-          openText.gameObject.SetActive(false);  
+            openText.gameObject.SetActive(false);  
         }
     }
 }

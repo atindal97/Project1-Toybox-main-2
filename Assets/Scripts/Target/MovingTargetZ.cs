@@ -56,4 +56,14 @@ public class MovingTargetZ : MonoBehaviour
         this.minZ = minZ;
         this.maxZ = maxZ;
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Player")
+        {
+            Health playerHealth = other.gameObject.GetComponent<Health>();
+            playerHealth.DamagePlayer(2);
+
+        }
+    }
 }
