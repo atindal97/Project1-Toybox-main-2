@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/AnnaTitle.unity
+    path: Assets/Scenes/Anna's Project/AnnaTitle.unity
     guid: e7fcf607d5263414ab7e7e8c5e6e79f0
   - enabled: 1
-    path: Assets/Scenes/AnnaProject.unity
+    path: Assets/Scenes/Anna's Project/AnnaProject.unity
     guid: c62222e5e95ffef4d830bd3464df07ab
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7,
