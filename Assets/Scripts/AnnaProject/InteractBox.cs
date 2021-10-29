@@ -6,12 +6,15 @@ using UnityEngine.InputSystem;
 
 public class InteractBox : MonoBehaviour
 {
-    public GameObject lid;
+    public GameObject openGate;
+    public GameObject closeGate;
     public TMP_Text openText;
     public GameObject player;
     public float interactionDistance;
     private Keyboard keyboard;
-    public bool isOpen;
+   public bool isOpen;
+
+
     public void Start()
     {
         keyboard = Keyboard.current;
@@ -26,7 +29,8 @@ public class InteractBox : MonoBehaviour
 
             if (keyboard.fKey.isPressed) 
             {
-               lid.SetActive (false);
+                closeGate.SetActive(false);
+                openGate.SetActive(true);
                 isOpen = true;
             }
 
